@@ -17,6 +17,12 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
     <title>Frontend Mentor | Order summary card</title>
 
@@ -32,18 +38,35 @@
     </style>
   </head>
   <body>
-    <div class="container card">
-      <img src="./images/illustration-hero.svg" alt="Illustration hero" />
-      <h1 class="text-center">Order Summary</h1>
-      <p class="text-center">
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-      <div class="plan text-center">
-        Annual Plan $59.99/year <a href="#"> Change</a>
+    <div class="flex-container">
+      <div class="card hero-illustration shadow">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="Illustration hero"
+          class="img-fluid illustration"
+        />
+        <h1 class="text-center mt-5">Order Summary</h1>
+        <p class="text-center">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="plan-container text-center">
+          <div class="left-item">
+            <img src="./images/icon-music.svg" alt="Music icon" />
+          </div>
+          <div class="left-item">
+            <span class="plan-title">Annual Plan</span>
+            <br />
+            <span class="price">$59.99/year</span>
+          </div>
+
+          <div class="right-item">
+            <a href="#"> Change</a>
+          </div>
+        </div>
+        <button class="btn-payment shadow mt-4">Proceed to Payment</button>
+        <a href="#" class="text-center cancel-order"> Cancel Order </a>
       </div>
-      <button>Proceed to Payment</button>
-      <a href="#" class="text-center"> Cancel Order </a>
     </div>
 
     <footer>
@@ -51,7 +74,10 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Kinga Miśkiewicz </a>.
+        >. Coded by
+        <a href="https://github.com/kiyooteru/order-summary-component-main"
+          >Kinga Miśkiewicz </a
+        >.
       </div>
     </footer>
   </body>

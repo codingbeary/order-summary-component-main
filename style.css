@@ -1,0 +1,132 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.illustration {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card {
+  width: 450px;
+  height: 697px;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 50px 20px 50px;
+  color: #717fa6;
+}
+.plan-container {
+  background-color: #f7f9ff;
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px 30px;
+  line-height: 1.7;
+}
+
+.left-item {
+  float: left;
+  margin-right: 30px;
+}
+.right-item {
+  float: right;
+  margin: auto;
+  margin-right: 10px;
+}
+.plan-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.plan-title {
+  font-weight: 900;
+}
+.price {
+  color: #717fa6;
+  font-weight: 500;
+}
+
+.plan-container a {
+  color: #382ae1;
+  font-weight: 700;
+  font-size: 14px;
+}
+.plan-container a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+.btn-payment {
+  background-color: #382ae1;
+  color: white;
+  border-radius: 11px;
+  padding: 10px;
+  border: none;
+  margin: 10px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 160ms ease-in-out;
+}
+.btn-payment:hover {
+  background-color: #766cf1;
+}
+.cancel-order {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #717fa6;
+  margin-top: 20px;
+}
+.cancel-order:hover {
+  color: #1f2e55;
+}
+@media (max-width: 375px) {
+  .card {
+    height: 567px;
+    width: 327px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+    margin: 10px 30px;
+  }
+  .plan-title {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 14px;
+  }
+  .plan-container {
+    padding: 10px;
+    line-height: 1.5;
+  }
+  .plan-container a {
+    font-size: 13px;
+  }
+  .left-item {
+    margin-right: 10px;
+  }
+  .cancel-order {
+    margin-top: 10px;
+  }
+}
